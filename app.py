@@ -189,10 +189,11 @@ if matches:
     plot_skill_gap(all_missing)
 
 # ----------- COURSES ------------------
-if matches:
+"""if matches:
     st.header("🎓 Recommended Courses (Coursera)")
     all_missing = list({s for L in all_missing for s in L})
     courses = get_recommended_courses(all_missing)
     for c in courses:
-        st.markdown(f"- [{c['name']}]({c['link']})")
+        st.markdown(f"- [{c['name']}]({c['link']})")"""
+
 
