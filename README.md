@@ -2,8 +2,10 @@ Streamlit app link : https://intelligentresumebasedjobsuggestiongit-jyfrxfsd4cca
 
 🧠 Intelligent Resume-Based Job Suggestion System
 AI-Powered Job Matching using AWS Bedrock, Lambda, MongoDB & Streamlit
-  This project intelligently analyzes a user’s resume, extracts skills & experience using AWS Bedrock Claude, retrieves real-time job opportunities using JSearch API,    scores job matches using a hybrid ranking engine, and displays personalized job suggestions through a Streamlit UI.
+  This project intelligently analyzes a user’s resume, extracts skills & experience using AWS Bedrock Claude, retrieves real-time job opportunities using JSearch API, scores job matches using a hybrid ranking engine, and displays personalized job suggestions through a Streamlit UI.
+  
 🚀 Architecture Overview
+
 1️⃣ Resume Upload (Streamlit → S3)
 User uploads a resume from Streamlit UI
 Resume is stored in S3 bucket
@@ -76,12 +78,21 @@ UPLOAD_PATH="resumes/"
 JOB_REFRESH_ENDPOINT="https://your-api-id.execute-api.us-east-1.amazonaws.com/prod/refresh"
 RAPIDAPI_KEY="..."
 
-📊 Evaluation Metrics
-| Metric                       | Description                                       |
-| ---------------------------- | ------------------------------------------------- |
-| **Semantic Accuracy**        | Cosine similarity between resume & job embeddings |
-| **Skill Gap Detection Rate** | Accuracy of Claude’s missing skill extraction     |
-| **Response Time**            | Full pipeline < 8 seconds                         |
-| **Job Coverage Ratio**       | Relevant jobs returned / total fetched            |
-| **Scalability Score**        | Successful Lambda runs per 1000 uploads           |
-| **User Engagement Index**    | % of users clicking through job results           |
+🖥️ Streamlit UI Features
+
+✔ Resume upload
+✔ Load job matches
+✔ Top 20 job recommendations
+✔ Job link redirections
+✔ Skill-gap heatmaps
+✔ Recommended courses section
+✔ “Daily Auto Refresh” button
+✔ Clean mobile-friendly layout
+
+📍 Roadmap (Future Enhancements)
+
+Multi-language resume support.
+Multi-region job search.
+Personalized course suggestions.
+Workforce analytics dashboard.
+Fine-tuned embeddings for domain-specific resumes.
